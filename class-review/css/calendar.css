@@ -1,0 +1,115 @@
+.calendar-box h2 {
+    font-size: 30px;
+}
+
+.container {
+    margin: 0 50px;
+}
+
+.calendar-container {
+    width: 440px;
+    height: 475px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #3b4252;
+    font-size: 16px;
+    color: #d8dee9;
+    font-weight: bold;
+}
+
+.calendar-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.year-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.month-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+
+
+.month-container .button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #3b4252;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.month-container .button:hover {
+    background-color: #4c566a;
+}
+
+.month-container .button-left {
+    background-image: url(../static/calendar/left.png);
+}
+
+.month-container .button-right {
+    background-image: url(../static/calendar/right.png);
+}
+
+.week {
+    display: flex;
+    justify-content: space-around;
+    background-color: #434c5e;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.full-date {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-date div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.full-date div:hover {
+    background-color: #4c566a;
+}
+
+.full-date div:nth-child(-n+7) {
+    margin-top: 0;
+}
+
+.full-date div:nth-child(7n) {
+    margin-right: 0;
+}
+
+.current_day {
+    background-color: #81a1c1;
+}
+
+.current_day::after {
+    content: ".";
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7fff00;
+}

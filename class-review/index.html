@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class reviews</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/class-review.css">
+</head>
+
+<body onLoad="showInfo(current_year,months,current_day)">
+    <header>
+        <ul>
+            <li>首页</li>
+            <li>课评</li>
+            <li>课时</li>
+        </ul>
+    </header>
+    <main class="container">
+        <!-- 日历 -->
+        <div class="calendar-box">
+            <!-- 日历头部 -->
+            <div class="title-icon">
+                <img src="./static/calendar/calendar.png" alt="calendar">
+                <h2>日历</h2>
+            </div>
+            <div class="calendar-container">
+                <div class="calendar-title">
+                    <div class="year-container">
+                        <div class="year"></div>
+                    </div>
+                    <div class=" month-container">
+                        <button class="button button-left" onclick="previous()"></button>
+                        <span class="month"></span>
+                        <button class="button button-right" onclick="next()"></b>
+                    </div>
+                </div>
+                <main class="calendar-main">
+                    <!-- 星期 -->
+                    <div class="week">
+                        <span>日</span>
+                        <span>一</span>
+                        <span>二</span>
+                        <span>三</span>
+                        <span>四</span>
+                        <span>五</span>
+                        <span>六</span>
+                    </div>
+                    <!-- 日期 -->
+                    <div class="full-date"></div>
+                </main>
+            </div>
+        </div>
+        <!-- 课表 -->
+        <div class="class-review-box">
+            <div class="title-icon">
+                <img src="./static/class-review/class-review.png" alt="课表">
+                <h2>课表</h2>
+                <div class="time"></div>
+            </div>
+            <div class="class-review-container">
+                <div class="class-box hand-on">
+                    <header>
+                        <span>体验课</span>
+                        <div class="edit">
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </header>
+                    <main class="class-main-box">
+                        <div class="class-info">
+                            <div class="class-info-icon">
+                                <img src="./static/class-review/clock.png" alt="时钟">
+                                <span>上课时间</span>
+                            </div>
+                            <div class="class-info-icon">
+                                <img src="./static/class-review/class-type.png" alt="课程类型">
+                                <span>课程类型</span>
+                            </div>
+                            <div class="class-info-icon">
+                                <img src="./static/class-review/class-content.png" alt="课程内容">
+                                <span>课程内容</span>
+                            </div>
+                        </div>
+                        <div class="main-table"></div>
+                    </main>
+                </div>
+                <div class="class-box formal">
+                    <header>
+                        <span>正式课</span>
+                        <div class="edit">
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </header>
+                    <main class="class-main-box">
+                        <div class="class-info">
+                            <div class="class-info-icon">
+                                <img src="./static/class-review/clock.png" alt="时钟">
+                                <span>上课时间</span>
+                            </div>
+                            <div class="class-info-icon">
+                                <img src="./static/class-review/class-type.png" alt="课程类型">
+                                <span>课程类型</span>
+                            </div>
+                            <div class="class-info-icon">
+                                <img src="./static/class-review/class-content.png" alt="课程内容">
+                                <span>课程内容</span>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>姓名</td>
+                                    <td>出勤</td>
+                                    <td>课评</td>
+                                    <td>备注</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>晓</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>晓</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/class-review.js"></script>
+</body>
+
+</html>

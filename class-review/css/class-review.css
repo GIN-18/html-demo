@@ -1,0 +1,112 @@
+.class-review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    height: 475px;
+}
+
+.time {
+    margin-left: 30px;
+    color: #8fbcbb;
+}
+
+.class-review-box h2 {
+    font-size: 30px;
+}
+
+.class-box {
+    height: 220px;
+    padding: 15px;
+    background-color: #3b4252;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.class-box header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.edit button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #4c566a;
+}
+
+.edit button:nth-child(1) {
+    background-image: url(../static/class-review/minus.png);
+}
+
+.edit button:nth-child(2) {
+    background-image: url(../static/class-review/edit.png);
+}
+
+.edit button:nth-child(3) {
+    background-image: url(../static/class-review/add.png);
+}
+
+.edit button:hover {
+    background-color: #81a1c1;
+}
+
+.class-main-box {
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #434c5e;
+}
+
+.class-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+}
+
+.class-info-icon {
+    display: flex;
+    align-items: center;
+}
+
+.class-info-icon img {
+    width: 25px;
+}
+
+.class-info-icon span::before {
+    content: ".";
+    position: relative;
+    top: -5px;
+    left: 1px;
+    margin: 0 2px;
+}
+
+.class-main-box table {
+    width: 100%;
+    height: 95px;
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.class-main-box table td {
+    border: 1px solid #d8dee9;
+    text-align: center;
+}
+
+.main-table {
+    height: 95px;
+    margin-top: 10px;
+    border: 2px dashed #4c566a;
+    background-image: url(../static/class-review/add-review.png);
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: 50% 50%;
+}
